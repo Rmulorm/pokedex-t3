@@ -11,11 +11,9 @@ generator client {
   provider = "prisma-client-js"
 }
 
-model Post {
-    id        Int      @id @default(autoincrement())
-    name      String
-    createdAt DateTime @default(now())
-    updatedAt DateTime @updatedAt
-
-    @@index([name])
+model Pokemon {
+  id          String @id @default(cuid())
+  entryNumber Int
+  name        String
+  imageLink   String
 }
