@@ -17,6 +17,15 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "ww2dozkxj4c2mtmi.public.blob.vercel-storage.com",
+        port: "",
+      },
+    ],
+  },
 };
 
 export default config;
